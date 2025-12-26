@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let arr = [22,33,44,55,66,77,88]
+        // let item = 77;
+        // let index= undefined;
+
+        // for (let i=0; i<=arr.length-1;i++){
+        //     //  console.log(arr[i])
+        //     if (arr[i]===item){
+        //         index = i
+        //     }
+        // }
+        // // console.log(index)
+        // // console.log(arr.indexOf(item))
+        // arr.splice(2,1)
+        // console.log(arr)
+        function search(){
+            let arr = [22,33,44,55,66,77,88]
+        let item = document.getElementById("item").value;
+        item = parseInt(item)
+        let index= undefined;
+
+        for (let i=0; i<=arr.length-1;i++){
+            //  console.log(arr[i])
+            if (arr[i]===item){
+                index = i
+            }
+        }
+        console.log(index)
+        }
+
+    </script>
+</head>
+<body>
+    <input type="text" id="item" placeholder="Enter the index">
+    <button onclick="search()">Search</button>
+</body>
+</html>

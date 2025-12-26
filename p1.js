@@ -56,3 +56,12 @@ let newvalue = 1000
 // }
 // arr.length = arr.length-1
 // console.log(arr)
+ 
+let search = 11
+
+for(let i=0;i<arr.length-1;i++){
+  if(arr[i] == search){
+    console.log(`array of position ${i} is ${arr[i]}`)
+    break;
+  }
+}
