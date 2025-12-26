@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let arr = [2,4,5,6,7,8,9,3,1,0];
+        // let newvalue = 75; 
+        // let position = 3;
+        // console.log(arr)
+
+        // for (let i = arr.length-1; i>=0; i--){
+        //     // console.log(arr[i])
+        //     if(i>=position){
+        //         arr[i+1] = arr[i]
+        //         if(i == position){
+        //             arr[i] = newvalue
+        //         }
+        //     }
+        // }
+        // console.log(arr)
+        function insert() {
+            let arr = [2, 4, 5, 6, 7, 8, 9, 3, 1, 0];
+            let newvalue = document.getElementById("value").value;
+            let position = document.getElementById("position").value;
+            newvalue = parseInt(newvalue)
+            console.log(arr)
+
+            for (let i = arr.length - 1; i >= 0; i--) {
+                // console.log(arr[i])
+                if (i >= position) {
+                    arr[i + 1] = arr[i]
+                    if (i == position) {
+                        arr[i] = newvalue
+                    }
+ 
+                }
+            } 
+
+console.log(arr)
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" name="" id="position" placeholder="enter position">
+    <input type="text" name="" id="value" placeholder="enter the value">
+
+    <button onclick="insert()">insert</button>
+</body>
+
+</html>

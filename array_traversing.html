@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = [9,3,5,6,2,7,1,4,8,33,556,88,33,55,23,11];
+        // for (let i=0; i<a.length; i++){
+        //     // console.log(a[i])
+        //     document.write(`Array of ${i} : ${a[i]} <br>`)
+        // // }
+        // let x = 3;
+        //  document.write(a[x])
+        function getvalue(){ 
+                        let i = document.getElementById("value").value
+
+            if(i<a.length && typeof parseInt(i) === "number" && i >= 0){
+                alert(a[i])
+            }
+            else{
+                alert("valid input")
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="" id="value">
+    <button onclick="getvalue()">Get value</button>
+    
+</body>
+</html>
